@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="sorting-buttons">
+            <h2>Calorie Tracker</h2>
+            <button onclick="sortBy('name')">Sort by Name</button>
+            <button onclick="sortBy('calories')">Sort by Calories</button>
+        </div>
+
+        <ul class="food-list">
+        </ul>
+
+        <div class="add-food">
+            <input id="newFoodName" type="text" placeholder="Food Name" class="input-field">
+            <input id="newFoodAmount" type="text" placeholder="Grams" class="input-field">
+            <input id="newFoodCalories" type="text" placeholder="Calories" class="input-field">
+            <button onclick="addFood()" class="add-button">Add Food</button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
